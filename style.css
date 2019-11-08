@@ -1,0 +1,31 @@
+body {
+    background:#d87fff;
+}
+
+.container {
+    background: #d87fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    height: auto;
+    margin: auto;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.typewrite {
+    /* the border that acts like a text typing character */
+    border-right: 2px solid rgba(255, 255, 255, .75);
+
+    /* the animation - css */
+    animation: blinkTextCursor 600ms infinite normal;
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: rgba(255, 255, 255, 0.0);
+    }
+}
